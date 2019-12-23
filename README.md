@@ -22,6 +22,7 @@ docker run -it mydocker1
 ## Delete all containers in docker
 ```bash
 docker rm $(docker ps -a -q)
+docker container rm  $(docker container ps -a -q -f name=xxx(part of imagename))
 ```
 ## Delete all images in docker
 ```bash
